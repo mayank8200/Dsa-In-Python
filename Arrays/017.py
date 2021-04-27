@@ -1,10 +1,10 @@
-# find all pairs on integer array whose sum is equal to given number
-def getPairsCount(arr, k):
-        count=0
-        d={}
-        for i in arr:
-            sub = k-i
-            if sub in d:
-                count+=d[sub]
-            d[i]=d.get(i,0)+1
-        return count
+#Best time to buy and Sell stock
+def maxProfit(prices):
+        profit=0
+        i=1
+        mini=prices[0]
+        while i<len(prices):
+            mini=min(prices[i],mini)
+            profit=max(profit,prices[i]-mini)
+            i+=1
+        return profit
