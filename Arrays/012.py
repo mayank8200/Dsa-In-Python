@@ -1,4 +1,4 @@
-#Merge Intervals
+#Merge 2 sorted arrays without using Extra space.
 def merge(arr1, arr2, n, m): 
         temp = arr2[0]
         for i in range(n):
